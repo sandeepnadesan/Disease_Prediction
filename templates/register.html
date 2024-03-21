@@ -1,23 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://watermark.lovepik.com/photo/50064/1262.jpg_wh1200.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #ffffff; /* Set font color to white */
+            width: 80%; /* Set the width of the entire page */
+            margin: 0 auto; /* Center the page horizontally */
+            padding-top: 50px; /* Add some space from the top */
+        }
+
+        .container {
+            width: 60%; /* Set the width of the container */
+            margin: 0 auto; /* Center the container horizontally */
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: calc(100% - 22px); /* Adjust input width */
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent lighter background */
+        }
+
+        input[type="submit"] {
+            width: calc(100% - 22px); /* Adjust button width */
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50; /* Green */
+            color: #ffffff; /* White */
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+    </style>
 </head>
 <body>
-    <h1>Registration</h1>
-    <form  action="register.php" method="post">
-        <label>Name:</label><br>
-        <input type="text" name="name1"><br>
-        <label>Email:</label><br>
-        <input type="email" name="email"><br>
-        <label>Phone:</label><br>
-        <input type="text" name="phone"><br>
-        <label>Password:</label><br>
-        <input type="password" name="password"><br>
-        <label>Confirm Password:</label><br>
-        <input type="password" name="confirm_password"><br>
-        <input type="submit" value="Register">
-    </form>
+    <div class="container">
+        <h1>Registration</h1>
+        <form method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="phone">Phone:</label><br>
+            <input type="text" id="phone" name="phone"><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br>
+            <label for="confirm_password">Confirm Password:</label><br>
+            <input type="password" id="confirm_password" name="confirm_password"><br>
+            <input type="submit" value="Register">
+        </form>
+    </div>
 </body>
 </html>
- 

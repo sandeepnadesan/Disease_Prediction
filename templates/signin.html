@@ -2,15 +2,71 @@
 <html>
 <head>
     <title>Sign In</title>
+    <style>
+        body {
+            background-image: url('https://thumbs.dreamstime.com/b/healthcare-technology-medical-future-tech-medicine-futuristic-109914389.jpg');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            text-align: center;
+            padding-top: 50px; /* Adjust spacing from the top */
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px; /* Add some spacing below the heading */
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 300px; /* Increase the max width of the container */
+            margin: 0 auto; /* Center the container horizontally */
+        }
+
+        label {
+            display: block; /* Display labels as block elements */
+            margin-bottom: 5px; /* Add spacing below labels */
+            font-size: 18px; /* Increase font size */
+            color: #fff; /* Set label color to white */
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px; /* Add spacing between input fields */
+            border-radius: 10px;
+            border: none;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff; /* Blue background color */
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+    </style>
 </head>
 <body>
-    <h1>Sign In</h1>
-    <form method="post">
-        <label>Email or Phone:</label><br>
-        <input type="text" name="email_or_phone"><br>
-        <label>Password:</label><br>
-        <input type="password" name="password"><br>
-        <input type="submit" value="Sign In">
-    </form>
+    <div class="container">
+        <h1>Sign In</h1>
+        <form method="post">
+            <label for="email_or_phone">Email or Phone:</label><br>
+            <input type="text" id="email_or_phone" name="email_or_phone" required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br>
+            <input type="submit" value="Sign In">
+        </form>
+    </div>
 </body>
 </html>

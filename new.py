@@ -5,6 +5,7 @@ from langchain.chains.question_answering import load_qa_chain
 from langchain.prompts import PromptTemplate
 from dotenv import load_dotenv
 import os
+from langchain_community.vectorstores import FAISS
 
 load_dotenv()
 os.getenv("GOOGLE_API_KEY")
