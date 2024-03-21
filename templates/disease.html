@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Recommendation</title>
+</head>
+<body>
+    <h1>Disease Recommendation</h1>
+    <form action="/disease-recommendation" method="POST">
+        <label for="user_question">Enter your symptoms:</label><br>
+        <input type="text" id="user_question" name="user_question" required><br><br>
+        <input type="submit" value="Get Recommendation">
+    </form>
+    {% if response %}
+    <h2>Recommendation:</h2>
+    <p>{{ response }}</p>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask App</title>
+</head>
+<body>
+    <h1>TECHTURTLES</h1>
+    <form method="post">
+        <label for="user_question">ADD SYMPTOMS!!!</label><br>
+        <input type="text" id="user_question" name="user_question"><br>
+        <input type="submit" value="Submit">
+    </form>
+    {% if response %}
+    <p>Reply: {{ response }}</p>
+    {% endif %}
+</body>
+</html>
+x

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TECH TURTLES</title>
+    <style>
+        body {
+            background-image: url('3.png'); /* Relative path to the background image */
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: rgb(12, 11, 11);
+            font-size: 36px;
+            margin-top: 100px; /* Adjust the margin-top to position the title vertically */
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            background-color: #007bff; /* Adjust the color as needed */
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #0056b3; /* Adjust the color for hover effect */
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Disease Recommendation System</h1>
+    <a href="/register" class="btn" onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)">Register</a>
+    <a href="/signin" class="btn" onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)">Sign In</a>
+
+    <script>
+        function hoverEffect(element) {
+            element.style.backgroundColor = '#0056b3'; /* Change the background color on hover */
+        }
+
+        function normalEffect(element) {
+            element.style.backgroundColor = '#007bff'; /* Revert back to original color when not hovered */
+        }
+    </script>
+</body>
+</html>
