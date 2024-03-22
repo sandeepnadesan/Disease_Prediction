@@ -14,27 +14,26 @@
         }
 
         .header {
-            background-color: #0b1c3d; /* Highly dark blue color */
+            background-color: rgba(11, 28, 61, 0.7); /* Semi-transparent background */
             box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
             position: fixed;
             top: 0;
             width: 100%;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            backdrop-filter: blur(10px);
+            padding: 20px;
+            color: #ffffff; /* Font color white */
             z-index: 1000;
         }
 
         .logo {
             font-size: 36px;
             font-weight: bold;
-            color: #fff; /* White text color */
+            float: left; /* Align logo to the left */
         }
 
         .btn-container {
-            display: flex;
+            position: absolute;
+            top: 20px;
+            right: 20px;
         }
 
         .btn {
@@ -43,7 +42,8 @@
 
         .carousel-inner img {
             width: 100%;
-            height: auto;
+            height: 100vh; /* Adjusted height to full viewport height */
+            object-fit: cover; /* Ensure the image fully covers the container */
         }
 
         .carousel-caption {
@@ -51,18 +51,16 @@
             bottom: 20px;
             left: 50%;
             transform: translateX(-50%);
-            background-color: rgba(255, 255, 255, 0.7);
-            padding: 10px 20px;
-            border-radius: 5px;
+            color: #000000; /* Changed font color to black */
         }
 
         footer {
-            background-color: #0b1c3d;
-            color: #fff;
+            background-color: rgba(11, 28, 61, 0.7); /* Semi-transparent background */
+            color: #ffffff; /* Font color white */
             padding: 20px;
             text-align: center;
-            position: fixed;
-            bottom: 0;
+            position: absolute;
+            top: 0; /* Position to the top */
             width: 100%;
         }
     </style>
@@ -82,18 +80,22 @@
         <div class="carousel-item active">
             <img class="d-block w-100" src="https://www.nanalyze.com/app/uploads/2019/11/AI-Remote-Patient-Monitoring-Teaser.jpg" alt="First slide">
             <div class="carousel-caption">
+                Contact Us<br>
+                <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" alt="Email Icon" style="width: 20px; height: 20px; vertical-align: middle;"> sandeepnadesankns@gmail.com
             </div>
         </div>
         <div class="carousel-item">
             <img class="d-block w-100" src="https://imageio.forbes.com/specials-images/imageserve/61814ed70e1ae168d212c0bd/Futuristic-monitor-with-information-data/960x0.jpg?height=473&width=711&fit=bounds" alt="Second slide">
             <div class="carousel-caption">
-              
+                Contact Us<br>
+                <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" alt="Email Icon" style="width: 20px; height: 20px; vertical-align: middle;"> sandeepnadesankns@gmail.com
             </div>
         </div>
         <div class="carousel-item">
             <img class="d-block w-100" src="https://imageio.forbes.com/specials-images/imageserve/651bbeb1c78cc403f92a6abd/0x0.jpg?format=jpg&crop=2500,1405,x0,y0,safe&height=900&width=1600&fit=bounds" alt="Third slide">
             <div class="carousel-caption">
- 
+                Contact Us<br>
+                <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" alt="Email Icon" style="width: 20px; height: 20px; vertical-align: middle;"> sandeepnadesankns@gmail.com
             </div>
         </div>
     </div>
@@ -106,13 +108,6 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
-
-<footer>
-    <div class="container">
-        <p>Contact Us @ sandeepnadesankns@gmail.com</p>
-        
-    </div>
-</footer>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
